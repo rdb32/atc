@@ -1,0 +1,387 @@
+* {box-sizing: border-box;}
+
+body { 
+  background-color: #FDFEFF;    
+  margin: 0;
+  font-family: Muli, sans-serif;
+  color: #3B3285;    
+}
+
+h1, h2, h3  {
+    font-family: Righteous;
+}
+
+h4, h5, h6 {
+    font-family: Muli ;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #F8F8FF;   
+  padding: 0px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #FDFEFF;
+  color: black;
+}
+
+.header-right {
+  margin-top: 54px;    
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.btn {
+  border: 2px solid #EEAE21;
+  background-color: #EEAE21;
+  color: #F8F8FF;
+  padding: 6px 7px;
+  font-family: Righteous;    
+  font-size: 16px;
+  cursor: pointer;
+  float: left;    
+}
+
+.clear {
+  border-color: #EEAE21;
+  border-radius: 5px 0px 0px 5px;    
+  background-color: #F8F8FF;    
+  color: #EEAE21;
+  padding: 6px 28px;    
+}
+
+.solid {
+  border-color: #EEAE21;
+  border-radius: 0px 5px 5px 0px;    
+  background-color: #EEAE21;    
+  color: #F8F8FF;
+}
+
+.action {
+  background-color: #EEAE21;    
+  color: #F8F8FF;
+  height: 40px;
+  width: 160px;
+  padding: 6px 7px;
+  border-radius: 8px;
+  font-family: Righteous;    
+  font-size: 16px;
+  cursor: pointer;
+    
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 1000px;
+    background-color: #FDFEFF;
+    color: #3B3285;
+    text-align: center;
+    line-height: 0.5;
+}
+
+.box {
+  background-color: #FDFEFF;
+  color: #3B3285;
+  padding: 0px;
+  align-self: center;
+}
+
+.square1 {
+  width: 25px;
+  height: 25px;
+  background-color: #08A4B1;
+  position: relative;
+    
+  animation-name: square1;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes square1 {
+  0%   {background-color:#08A4B1; left:0px; top:0px;}
+  25%  {background-color:#EF517F; left:85%; top:0px;}
+  50%  {background-color:#A6CB3F; left:85%; top:100px;}
+  75%  {background-color:#3B3285; left:0px; top:100px;}
+  100% {background-color:#08A4B1; left:0px; top:0px;}
+}
+
+.square2 {
+  width: 25px;
+  height: 25px;
+  background-color: #3B3285;
+  position: relative;    
+  animation-name: square2;
+  animation-duration: 25s;
+  animation-direction: reverse;    
+  animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes square2 {
+  0%   {background-color:#3B3285; left:0px; top:0px;}
+  25%  {background-color:#08A4B1; left:85%; top:0px;}
+  50%  {background-color:#A6CB3F; left:85%; top:100px;}
+  75%  {background-color:#EF517F; left:0px; top:100px;}
+  100% {background-color:#3B3285; left:0px; top:0px;}
+}
+
+.square3 {
+  width: 25px;
+  height: 25px;
+  background-color: #A6CB3F;
+  position: relative;    
+  animation-name: square3;
+  animation-duration: 12s;    
+  animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes square3 {
+  0%   {background-color:#A6CB3F; left:0px; top:0px;}
+  25%  {background-color:#08A4B1; left:85%; top:0px;}
+  50%  {background-color:#E7D614; left:85%; top:100px;}
+  75%  {background-color:#EF517F; left:0px; top:100px;}
+  100% {background-color:#A6CB3F; left:0px; top:0px;}
+}
+
+.dot1 {
+  width: 25px;
+  height: 25px;
+  background-color: #EF517F;
+  border-radius: 50%;
+  position: relative;  
+  animation-name: dot1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes dot1 {
+  0%   {background-color:#EF517F; left:0px; top:0px;}
+  25%  {background-color:#08A4B1; left:75%; top:0px;}
+  50%  {background-color:#A6CB3F; left:75%; top:100px;}
+  75%  {background-color:#3B3285; left:0px; top:100px;}
+  100% {background-color:#EF517F; left:0px; top:0px;}
+}
+
+.dot2 {
+  width: 35px;
+  height: 35px;
+  background-color: #EEAE21;
+  border-radius: 50%;
+  position: relative;   
+  animation-name: dot2;
+  animation-duration: 15s;
+  animation-direction: reverse;    
+  animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes dot2 {
+  0%   {background-color:#EEAE21; left:25px; top:0px;}
+  25%  {background-color:#3B3285; left:75%; top:0px;}
+  50%  {background-color:#08A4B1; left:75%; top:100px;}
+  75%  {background-color:#E7D614; left:0px; top:100px;}
+  100% {background-color:#EEAE21; left:0px; top:0px;}
+}
+
+.dot3 {
+  width: 25px;
+  height: 25px;
+  background-color: #E7D614;
+  border-radius: 50%;
+  position: relative;   
+  animation-name: dot3;
+  animation-duration: 30s;
+  animation-direction: reverse;    
+  animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes dot3 {
+  0%   {background-color:#E7D614; left:25px; top:0px;}
+  25%  {background-color:#3B3285; left:95%; top:0px;}
+  50%  {background-color:#08A4B1; left:95%; top:100px;}
+  75%  {background-color:#EF517F; left:0px; top:100px;}
+  100% {background-color:#E7D614; left:0px; top:0px;}
+}
+
+.triangle-up {
+    margin-left: 250px;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 35px solid #EEAE21;
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.triangle-down {
+    margin-left: 75px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 45px solid #E7D614;
+    animation-name: spin;
+  animation-duration: 5000ms;
+    animation-direction: reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.content {
+    background-image: url(Images/remi-walle-UOwvwZ9Dy6w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    height: 800px;
+    margin: 100px 0px 0px;
+    border-top: 20px solid #EEAE21;
+    border-bottom: 20px solid #A6CB3F;
+    font-size: 34px;
+    text-align: center;
+    line-height: 0.4;
+}
+
+.tagline {
+    float: left;
+    padding: 200px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 275px 200px 1fr 200px 200px;
+    grid-gap: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F8F8FF;
+    color: #3B3285;
+    overflow: hidden;
+    padding: 10px 0px 10px 19px;
+}
+
+.copy {
+    align-self: center;
+    font-size: 12px;
+    line-height: 0.5;
+    padding: 20px 0px 0px 0px; 
+}
+
+.social {
+    text-align: center;
+    font-size: 24px;
+     align-self: center;
+    line-height: 0.5;
+}
+
+.fab {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;    
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook-square {
+  background: #F8F8FF;
+    color: #08A4B1;
+}
+
+.fa-twitter-square {
+  background: #F8F8FF;
+  color: #3B3285;
+}
+
+.fa-instagram{
+  background: #F8F8FF;
+  color: #EF517F;
+}
+
+.fa-vimeo{
+  background: #F8F8FF;
+  color: #EEAE21;
+}
+
+.fa-youtube-square{
+  background: #F8F8FF;
+  color: #A6CB3F;
+}
+
+.fa-snapchat-square{
+  background: #F8F8FF;
+  color: #E7D614;
+}
+
+ul {
+  list-style-type: none;
+     padding: 10px 0px 0px 0px;
+    line-height: 1.5;
+}
+
+li {
+   cursor: pointer; 
+}
+
+li:hover {
+    opacity: 0.7;
+}
